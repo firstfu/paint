@@ -34,3 +34,11 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+###
+
+1、請將規畫書寫成 prd.md 放在 docs 目錄下。
+2、請將規畫書拆解成不同的子功能 todo, 然後放在 docs 目錄下的 todo.md 文件。
+3、更新 CLAUDE.md 文件，請寫上每完成一個 todo 的功能，要將 todo.md 裡面對應的功能劃掉。
+4、一律用繁體中文回應。
+5、每個文件的頂部要加上詳細的註解。
