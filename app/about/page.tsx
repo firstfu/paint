@@ -142,7 +142,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team Section */}
+      {/* Team Section - 團隊區塊已移除
       <section className="py-20 bg-white">
         <div className="container">
           <div className="text-center mb-12">
@@ -156,16 +156,10 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-3 gap-8">
             {TEAM_MEMBERS.map((member) => (
               <div key={member.id} className="card p-6 text-center group">
-                {/* Avatar */}
                 <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-[var(--color-secondary)] flex items-center justify-center relative overflow-hidden">
                   <span className="text-4xl font-bold text-[var(--color-primary)]">
                     {member.name[0]}
                   </span>
-                  {/* Experience Badge - 已註解 (新團隊不顯示年資)
-                  <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 bg-[var(--color-accent)] text-[var(--color-primary)] text-xs font-bold px-3 py-1 rounded-full">
-                    {member.experience}經驗
-                  </div>
-                  */}
                 </div>
                 <h3 className="text-xl font-bold text-[var(--color-primary)] mb-1">
                   {member.name}
@@ -181,6 +175,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      */}
 
       {/* Service Areas */}
       <section className="py-20 bg-[var(--color-secondary)]">
