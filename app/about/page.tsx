@@ -104,7 +104,7 @@ export default function AboutPage() {
                   </svg>
                 ),
                 title: "品質保證",
-                description: "使用優質材料，嚴格把關每一道工序。我們的工程都有保固，讓您無後顧之憂。",
+                description: "使用優質材料，嚴格把關每一道工序，讓您無後顧之憂。",
               },
               {
                 icon: (

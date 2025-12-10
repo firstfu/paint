@@ -4,7 +4,7 @@ import { COMPANY, SERVICES, FAQS } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `常見問題 - 屋頂清洗、油漆、防水工程 FAQ`,
-  description: `${COMPANY.name}常見問題解答：屋頂清洗費用、油漆施工時間、防水保固等問題，讓您對服務有更清楚的了解。`,
+  description: `${COMPANY.name}常見問題解答：屋頂清洗費用、油漆施工時間、防水工程等問題，讓您對服務有更清楚的了解。`,
 };
 
 export default function FAQPage() {
