@@ -129,7 +129,7 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* Service Areas */}
+              {/* 服務地區已移除
               <div className="mb-8">
                 <h3 className="font-bold text-[var(--color-primary)] mb-4">服務地區</h3>
                 <div className="flex flex-wrap gap-2">
@@ -143,8 +143,9 @@ export default function ContactPage() {
                   ))}
                 </div>
               </div>
+              */}
 
-              {/* Social */}
+              {/* 社群媒體已移除
               <div>
                 <h3 className="font-bold text-[var(--color-primary)] mb-4">社群媒體</h3>
                 <div className="flex gap-3">
@@ -165,6 +166,7 @@ export default function ContactPage() {
                   </a>
                 </div>
               </div>
+              */}
             </div>
 
             {/* Right - Form */}

@@ -68,6 +68,7 @@ export default function Hero() {
 
             {/* Trust Badges */}
             <div className="flex items-center gap-6 animate-fade-in-up delay-400">
+              {/* 客戶頭像已移除
               <div className="flex -space-x-3">
                 {[1, 2, 3, 4].map((i) => (
                   <div
@@ -81,6 +82,7 @@ export default function Hero() {
                   +99
                 </div>
               </div>
+              */}
               <div>
                 <div className="flex items-center gap-1 mb-0.5">
                   {[1, 2, 3, 4, 5].map((i) => (
