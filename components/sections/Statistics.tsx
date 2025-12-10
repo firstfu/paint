@@ -5,18 +5,6 @@ import { COMPANY } from "@/lib/constants";
 
 const stats = [
   {
-    value: COMPANY.completedProjects,
-    suffix: "+",
-    label: "完成專案",
-    description: "累積服務案例",
-  },
-  {
-    value: new Date().getFullYear() - COMPANY.yearEstablished,
-    suffix: "年",
-    label: "服務經驗",
-    description: "專業累積年資",
-  },
-  {
     value: COMPANY.satisfactionRate,
     suffix: "%",
     label: "客戶滿意度",
