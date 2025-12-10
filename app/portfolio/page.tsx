@@ -4,7 +4,7 @@ import { COMPANY, SERVICES, PORTFOLIO_ITEMS } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `案例展示 - ${COMPANY.region}屋頂清洗、油漆工程實績`,
-  description: `查看${COMPANY.name}的施工案例，包含屋頂清洗、油漆、防水工程的 Before/After 對比照片。${COMPANY.region}在地${new Date().getFullYear() - COMPANY.yearEstablished}年經驗，${COMPANY.completedProjects}+ 完工案例。`,
+  description: `查看${COMPANY.name}的施工案例，包含屋頂清洗、油漆、防水工程的 Before/After 對比照片。`,
 };
 
 export default function PortfolioPage() {
@@ -29,18 +29,10 @@ export default function PortfolioPage() {
       {/* Stats */}
       <section className="py-12 bg-white border-b border-[var(--color-border)]">
         <div className="container">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <p className="text-4xl font-bold text-[var(--color-primary)]">{COMPANY.completedProjects}+</p>
-              <p className="text-[var(--color-text-muted)]">完工案例</p>
-            </div>
+          <div className="grid grid-cols-2 gap-8 text-center max-w-md mx-auto">
             <div>
               <p className="text-4xl font-bold text-[var(--color-primary)]">{COMPANY.satisfactionRate}%</p>
               <p className="text-[var(--color-text-muted)]">客戶滿意度</p>
-            </div>
-            <div>
-              <p className="text-4xl font-bold text-[var(--color-primary)]">{new Date().getFullYear() - COMPANY.yearEstablished}</p>
-              <p className="text-[var(--color-text-muted)]">年豐富經驗</p>
             </div>
             <div>
               <p className="text-4xl font-bold text-[var(--color-primary)]">{COMPANY.subRegions.length}</p>

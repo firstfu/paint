@@ -166,6 +166,7 @@ export default function FAQPage() {
                       <p className="font-semibold text-[var(--color-primary)]">{COMPANY.phone}</p>
                     </div>
                   </a>
+                  {/* Email 已移除
                   <a
                     href={`mailto:${COMPANY.email}`}
                     className="flex items-center gap-3 p-3 rounded-xl bg-[var(--color-secondary)] hover:bg-[var(--color-accent)] transition-colors"
@@ -178,6 +179,7 @@ export default function FAQPage() {
                       <p className="font-semibold text-[var(--color-primary)] text-sm">{COMPANY.email}</p>
                     </div>
                   </a>
+                  */}
                 </div>
                 <Link href="/contact" className="btn btn-primary w-full justify-center">
                   線上詢問

@@ -10,7 +10,7 @@ export default function JsonLd() {
     description: COMPANY.description,
     url: "https://tuxinju.com.tw",
     telephone: COMPANY.phone,
-    email: COMPANY.email,
+    // email: COMPANY.email,  // email 已移除
     address: {
       "@type": "PostalAddress",
       streetAddress: COMPANY.address,
@@ -38,7 +38,7 @@ export default function JsonLd() {
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "4.9",
-      reviewCount: COMPANY.completedProjects.toString(),
+      reviewCount: "100",  // 暫時使用固定值，原為 COMPANY.completedProjects
     },
     areaServed: COMPANY.subRegions.map(region => ({
       "@type": "City",

@@ -13,7 +13,7 @@ export default function Team() {
             值得信賴的夥伴
           </h2>
           <p className="section-description mx-auto">
-            經驗豐富的專業師傅團隊，為您提供最優質的服務
+            專業師傅團隊，為您提供最優質的服務
           </p>
         </div>
 
@@ -34,10 +34,11 @@ export default function Team() {
                     </span>
                   </div>
                 </div>
-                {/* Experience Badge */}
+                {/* Experience Badge (已註解 - 新團隊不顯示年資)
                 <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 px-3 py-1 bg-[var(--color-primary)] text-white text-xs font-medium rounded-full">
                   {member.experience} 經驗
                 </div>
+                */}
               </div>
 
               {/* Info */}

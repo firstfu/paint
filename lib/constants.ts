@@ -3,16 +3,17 @@ export const COMPANY = {
   name: '塗新居',
   nameEn: 'TuXinJu',
   slogan: '讓您的房屋煥然一新',
-  description: '南投縣專業屋頂清洗、油漆、防水服務團隊，20年經驗，品質保證。',
-  phone: '049-123-4567',
+  description: '南投縣專業屋頂清洗、油漆、防水服務團隊，品質保證。',
+  // phone: '049-123-4567',  // 室內電話已移除
+  phone: '0912-345-678',  // 改用行動電話作為主要聯絡方式
   mobile: '0912-345-678',
-  email: 'service@tuxinju.com.tw',
+  // email: 'service@tuxinju.com.tw',  // email 已移除
   address: '南投縣南投市中興路123號',
   hours: '週一至週六 8:00-18:00',
   region: '南投縣',
   subRegions: ['南投市', '草屯鎮', '埔里鎮', '竹山鎮', '名間鄉', '集集鎮', '水里鄉', '魚池鄉'],
-  yearEstablished: 2004,
-  completedProjects: 2500,
+  // yearEstablished: 2004,
+  // completedProjects: 2500,
   satisfactionRate: 98,
 } as const;
 
@@ -121,23 +122,23 @@ export const TEAM_MEMBERS = [
     id: 1,
     name: '陳建國',
     role: '創辦人 / 總監',
-    experience: '25年',
-    description: '從事油漆工程超過25年，對品質有著極高的堅持。',
+    // experience: '25年',
+    description: '對品質有著極高的堅持，帶領團隊追求卓越。',
     image: '/images/team/member-1.jpg',
   },
   {
     id: 2,
     name: '李明輝',
     role: '工程主管',
-    experience: '18年',
-    description: '專精防水工程，解決過上千件疑難雜症。',
+    // experience: '18年',
+    description: '專精防水工程，解決各種疑難雜症。',
     image: '/images/team/member-2.jpg',
   },
   {
     id: 3,
     name: '黃志偉',
     role: '資深師傅',
-    experience: '15年',
+    // experience: '15年',
     description: '細心負責，客戶好評不斷的口碑師傅。',
     image: '/images/team/member-3.jpg',
   },
@@ -172,7 +173,7 @@ export const FAQS = [
   {
     id: 5,
     question: '如何預約服務？',
-    answer: '您可以透過網站表單、電話（049-123-4567）或 LINE 預約。我們會在 24 小時內回覆您，並安排免費到府評估。',
+    answer: '您可以透過網站表單、電話（0912-345-678）或 LINE 預約。我們會在 24 小時內回覆您，並安排免費到府評估。',
     category: 'general',
   },
   {

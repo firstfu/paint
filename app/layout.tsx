@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     default: `${COMPANY.region}屋頂清洗、油漆、防水專家 | ${COMPANY.name} - ${COMPANY.slogan}`,
     template: `%s | ${COMPANY.name}`,
   },
-  description: `${COMPANY.name}提供${COMPANY.region}專業屋頂清洗、屋頂油漆、室內油漆、防水處理服務。${COMPANY.completedProjects}+完工案例，${COMPANY.satisfactionRate}%客戶滿意度。立即預約免費估價！`,
+  description: `${COMPANY.name}提供${COMPANY.region}專業屋頂清洗、屋頂油漆、室內油漆、防水處理服務。${COMPANY.satisfactionRate}%客戶滿意度。立即預約免費估價！`,
   keywords: [...SEO_KEYWORDS.primary, ...SEO_KEYWORDS.secondary, ...SEO_KEYWORDS.local],
   authors: [{ name: COMPANY.name }],
   creator: COMPANY.name,

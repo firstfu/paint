@@ -4,7 +4,7 @@ import { COMPANY, SERVICES } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `專業服務項目 - 屋頂清洗、油漆、防水`,
-  description: `${COMPANY.name}提供專業屋頂清洗、屋頂油漆、室內油漆、防水處理服務。${COMPANY.region}在地${new Date().getFullYear() - COMPANY.yearEstablished}年經驗，品質保證。`,
+  description: `${COMPANY.name}提供專業屋頂清洗、屋頂油漆、室內油漆、防水處理服務。${COMPANY.region}在地專業團隊，品質保證。`,
 };
 
 export default function ServicesPage() {

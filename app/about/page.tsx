@@ -3,12 +3,12 @@ import Link from "next/link";
 import { COMPANY, TEAM_MEMBERS, SERVICES } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `關於我們 - ${COMPANY.region}在地${new Date().getFullYear() - COMPANY.yearEstablished}年專業團隊`,
-  description: `認識${COMPANY.name}：${COMPANY.region}專業屋頂清洗、油漆、防水服務團隊。成立於${COMPANY.yearEstablished}年，擁有${new Date().getFullYear() - COMPANY.yearEstablished}年豐富經驗，服務超過${COMPANY.completedProjects}戶家庭。`,
+  title: `關於我們 - ${COMPANY.region}專業團隊`,
+  description: `認識${COMPANY.name}：${COMPANY.region}專業屋頂清洗、油漆、防水服務團隊。`,
 };
 
 export default function AboutPage() {
-  const yearsExperience = new Date().getFullYear() - COMPANY.yearEstablished;
+  // const yearsExperience = new Date().getFullYear() - COMPANY.yearEstablished;
 
   return (
     <>
@@ -18,7 +18,7 @@ export default function AboutPage() {
           <div className="max-w-3xl mx-auto text-center">
             <span className="section-label justify-center">關於我們</span>
             <h1 className="text-4xl md:text-5xl font-bold text-[var(--color-primary)] mb-6">
-              {COMPANY.region}在地 {yearsExperience} 年<br />專業油漆防水團隊
+              {COMPANY.region}在地<br />專業油漆防水團隊
             </h1>
             <p className="text-lg text-[var(--color-text-light)]">
               {COMPANY.slogan}，從一個小工班到今天的專業團隊，
@@ -38,9 +38,11 @@ export default function AboutPage() {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center">
                     <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-[var(--color-primary)]/10 flex items-center justify-center">
-                      <span className="text-6xl font-bold text-[var(--color-primary)]">{yearsExperience}</span>
+                      <svg className="w-16 h-16 text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                      </svg>
                     </div>
-                    <p className="text-xl font-medium text-[var(--color-text)]">年專業經驗</p>
+                    <p className="text-xl font-medium text-[var(--color-text)]">專業團隊</p>
                   </div>
                 </div>
               </div>
@@ -68,14 +70,13 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-[var(--color-text-light)] leading-relaxed">
                 <p>
-                  {COMPANY.yearEstablished} 年，創辦人陳建國師傅憑著一身好手藝，開始為南投鄉親服務。
+                  創辦人陳建國師傅憑著一身好手藝，開始為南投鄉親服務。
                   從最初的街坊鄰居口耳相傳，到今天服務遍及整個南投縣，
                   {COMPANY.name}始終保持著創業時的初心。
                 </p>
                 <p>
                   我們相信，每一間房子都是屋主的心血結晶。無論是洗屋頂、油漆還是防水工程，
-                  我們都以對待自己家的心態來服務每一位客戶。這份用心，就是我們能夠累積超過
-                  {COMPANY.completedProjects} 個案例的原因。
+                  我們都以對待自己家的心態來服務每一位客戶。
                 </p>
                 <p>
                   今天的{COMPANY.name}已經是一支專業團隊，但我們從未忘記最初的承諾：
@@ -160,10 +161,11 @@ export default function AboutPage() {
                   <span className="text-4xl font-bold text-[var(--color-primary)]">
                     {member.name[0]}
                   </span>
-                  {/* Experience Badge */}
+                  {/* Experience Badge - 已註解 (新團隊不顯示年資)
                   <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 bg-[var(--color-accent)] text-[var(--color-primary)] text-xs font-bold px-3 py-1 rounded-full">
                     {member.experience}經驗
                   </div>
+                  */}
                 </div>
                 <h3 className="text-xl font-bold text-[var(--color-primary)] mb-1">
                   {member.name}
@@ -253,7 +255,6 @@ export default function AboutPage() {
               讓我們為您服務
             </h2>
             <p className="text-white/70 mb-8 max-w-xl mx-auto">
-              {yearsExperience} 年經驗，{COMPANY.completedProjects}+ 完工案例，
               您值得最專業的服務
             </p>
             <div className="flex gap-4 justify-center flex-wrap">

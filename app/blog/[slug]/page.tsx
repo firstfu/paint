@@ -51,7 +51,7 @@ export default async function BlogPostPage({ params }: Props) {
       },
       {
         title: "專業建議",
-        content: `作為在${COMPANY.region}服務超過${new Date().getFullYear() - COMPANY.yearEstablished}年的專業團隊，我們建議屋主們：
+        content: `作為${COMPANY.region}的專業團隊，我們建議屋主們：
 
 1. **定期檢查**：至少每半年檢查一次屋頂和外牆狀況
 2. **及時處理**：發現問題不要拖延，小問題可能會演變成大問題
@@ -232,6 +232,7 @@ export default async function BlogPostPage({ params }: Props) {
                     </svg>
                     {COMPANY.phone}
                   </a>
+                  {/* Email 已移除
                   <a
                     href={`mailto:${COMPANY.email}`}
                     className="flex items-center gap-3 text-[var(--color-text-light)] hover:text-[var(--color-primary)]"
@@ -241,6 +242,7 @@ export default async function BlogPostPage({ params }: Props) {
                     </svg>
                     {COMPANY.email}
                   </a>
+                  */}
                 </div>
               </div>
             </div>

@@ -44,7 +44,7 @@ export default function Hero() {
             {/* Description */}
             <p className="text-lg text-[var(--color-text-light)] mb-8 leading-relaxed animate-fade-in-up delay-200">
               無論是髒污斑駁的屋頂、老舊褪色的外牆，還是令人頭痛的漏水問題，
-              我們都能以專業技術為您徹底解決。{COMPANY.completedProjects}+ 完工案例，
+              我們都能以專業技術為您徹底解決。
               {COMPANY.satisfactionRate}% 客戶滿意度。
             </p>
 
@@ -115,7 +115,7 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* Floating Stats Card */}
+            {/* Floating Stats Card - 完成專案數 (已註解)
             <div className="absolute -bottom-6 -left-6 md:left-0 bg-white rounded-2xl shadow-xl p-5 animate-slide-in-left delay-400">
               <div className="flex items-center gap-4">
                 <div className="w-14 h-14 rounded-xl bg-[var(--color-primary)] flex items-center justify-center">
@@ -131,8 +131,9 @@ export default function Hero() {
                 </div>
               </div>
             </div>
+            */}
 
-            {/* Floating Badge Card */}
+            {/* Floating Badge Card - 服務年資 (已註解)
             <div className="absolute top-8 -right-4 md:right-0 bg-white rounded-2xl shadow-xl p-4 animate-slide-in-right delay-500">
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-xl bg-[var(--color-accent)] flex items-center justify-center">
@@ -148,6 +149,7 @@ export default function Hero() {
                 </div>
               </div>
             </div>
+            */}
           </div>
         </div>
       </div>

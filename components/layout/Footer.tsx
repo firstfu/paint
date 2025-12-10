@@ -123,12 +123,9 @@ export default function Footer() {
                   <a href={`tel:${COMPANY.phone.replace(/-/g, "")}`} className="text-sm hover:text-[var(--color-accent)] transition-colors">
                     {COMPANY.phone}
                   </a>
-                  <span className="text-white/30 mx-2">|</span>
-                  <a href={`tel:${COMPANY.mobile.replace(/-/g, "")}`} className="text-sm hover:text-[var(--color-accent)] transition-colors">
-                    {COMPANY.mobile}
-                  </a>
                 </div>
               </li>
+              {/* Email 已移除
               <li className="flex items-start gap-3">
                 <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -142,6 +139,7 @@ export default function Footer() {
                   </a>
                 </div>
               </li>
+              */}
               <li className="flex items-start gap-3">
                 <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

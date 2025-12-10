@@ -27,6 +27,7 @@ export default function Header() {
             專業服務 {COMPANY.region} 地區 | 免費估價
           </p>
           <div className="flex items-center gap-4 sm:gap-6 ml-auto">
+            {/* Email 已移除
             <a
               href={`mailto:${COMPANY.email}`}
               className="flex items-center gap-1.5 hover:text-[var(--color-accent)] transition-colors"
@@ -36,6 +37,7 @@ export default function Header() {
               </svg>
               <span className="hidden md:inline">{COMPANY.email}</span>
             </a>
+            */}
             <a
               href={`tel:${COMPANY.phone.replace(/-/g, "")}`}
               className="flex items-center gap-1.5 hover:text-[var(--color-accent)] transition-colors"

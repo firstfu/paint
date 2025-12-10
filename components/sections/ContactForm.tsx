@@ -54,6 +54,7 @@ export default function ContactForm() {
                 </div>
               </a>
 
+              {/* Email 已移除
               <a
                 href={`mailto:${COMPANY.email}`}
                 className="flex items-center gap-4 p-4 rounded-xl bg-white hover:shadow-lg transition-all group"
@@ -68,6 +69,7 @@ export default function ContactForm() {
                   <p className="font-semibold text-[var(--color-primary)]">{COMPANY.email}</p>
                 </div>
               </a>
+              */}
 
               <div className="flex items-center gap-4 p-4 rounded-xl bg-white">
                 <div className="w-12 h-12 rounded-xl bg-[var(--color-secondary)] flex items-center justify-center">

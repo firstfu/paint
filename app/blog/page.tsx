@@ -22,7 +22,7 @@ export default function BlogPage() {
               專業知識分享
             </h1>
             <p className="text-lg text-[var(--color-text-light)]">
-              多年經驗累積的實用知識，幫助您更了解房屋維護的方方面面
+              專業知識分享，幫助您更了解房屋維護的方方面面
             </p>
           </div>
         </div>

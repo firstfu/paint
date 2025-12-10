@@ -84,6 +84,7 @@ export default function ContactPage() {
                   </div>
                 </a>
 
+                {/* Email 已移除
                 <a
                   href={`mailto:${COMPANY.email}`}
                   className="flex items-center gap-4 p-4 rounded-xl bg-[var(--color-secondary-light)] hover:bg-[var(--color-secondary)] transition-all group"
@@ -98,6 +99,7 @@ export default function ContactPage() {
                     <p className="font-bold text-[var(--color-primary)]">{COMPANY.email}</p>
                   </div>
                 </a>
+                */}
 
                 <div className="flex items-center gap-4 p-4 rounded-xl bg-[var(--color-secondary-light)]">
                   <div className="w-14 h-14 rounded-xl bg-[var(--color-secondary)] flex items-center justify-center">
