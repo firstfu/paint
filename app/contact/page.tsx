@@ -101,6 +101,7 @@ export default function ContactPage() {
                 </a>
                 */}
 
+                {/* 地址已移除
                 <div className="flex items-center gap-4 p-4 rounded-xl bg-[var(--color-secondary-light)]">
                   <div className="w-14 h-14 rounded-xl bg-[var(--color-secondary)] flex items-center justify-center">
                     <svg className="w-7 h-7 text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -113,6 +114,7 @@ export default function ContactPage() {
                     <p className="font-bold text-[var(--color-primary)]">{COMPANY.address}</p>
                   </div>
                 </div>
+                */}
 
                 <div className="flex items-center gap-4 p-4 rounded-xl bg-[var(--color-secondary-light)]">
                   <div className="w-14 h-14 rounded-xl bg-[var(--color-secondary)] flex items-center justify-center">
@@ -316,7 +318,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Map Section (Placeholder) */}
+      {/* Map Section - 地圖區塊已移除
       <section className="py-20 bg-[var(--color-secondary)]">
         <div className="container">
           <div className="text-center mb-12">
@@ -337,6 +339,7 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+      */}
 
       {/* FAQ Preview */}
       <section className="py-20 bg-white">

@@ -100,6 +100,7 @@ export default function Footer() {
           <div>
             <h3 className="font-serif text-lg font-semibold mb-4">聯絡資訊</h3>
             <ul className="space-y-4">
+              {/* 地址已移除
               <li className="flex items-start gap-3">
                 <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -112,6 +113,7 @@ export default function Footer() {
                   <p className="text-sm">{COMPANY.address}</p>
                 </div>
               </li>
+              */}
               <li className="flex items-start gap-3">
                 <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

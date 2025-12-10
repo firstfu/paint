@@ -71,6 +71,7 @@ export default function ContactForm() {
               </a>
               */}
 
+              {/* 地址已移除
               <div className="flex items-center gap-4 p-4 rounded-xl bg-white">
                 <div className="w-12 h-12 rounded-xl bg-[var(--color-secondary)] flex items-center justify-center">
                   <svg className="w-6 h-6 text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -83,6 +84,7 @@ export default function ContactForm() {
                   <p className="font-semibold text-[var(--color-primary)]">{COMPANY.address}</p>
                 </div>
               </div>
+              */}
 
               <div className="flex items-center gap-4 p-4 rounded-xl bg-white">
                 <div className="w-12 h-12 rounded-xl bg-[var(--color-secondary)] flex items-center justify-center">
