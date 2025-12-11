@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { COMPANY, BLOG_POSTS, SERVICES } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -60,18 +61,16 @@ export default function BlogPage() {
               <div className="card overflow-hidden">
                 <div className="grid lg:grid-cols-2">
                   {/* Image */}
-                  <div className="aspect-video lg:aspect-auto bg-[var(--color-secondary)] relative">
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-center">
-                        <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-[var(--color-accent)]/20 flex items-center justify-center">
-                          <svg className="w-10 h-10 text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
-                          </svg>
-                        </div>
-                        <span className="text-[var(--color-text-muted)]">精選文章</span>
-                      </div>
-                    </div>
-                    <div className="absolute top-4 left-4">
+                  <div className="aspect-video lg:aspect-auto lg:min-h-[300px] bg-[var(--color-secondary)] relative">
+                    <Image
+                      src={BLOG_POSTS[0].image}
+                      alt={BLOG_POSTS[0].title}
+                      fill
+                      className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      sizes="(max-width: 1024px) 100vw, 50vw"
+                      priority
+                    />
+                    <div className="absolute top-4 left-4 z-10">
                       <span className="badge badge-accent">精選</span>
                     </div>
                   </div>
@@ -128,13 +127,13 @@ export default function BlogPage() {
                 <article className="card overflow-hidden h-full">
                   {/* Image */}
                   <div className="aspect-video bg-[var(--color-secondary)] relative">
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="w-16 h-16 rounded-full bg-[var(--color-accent)]/20 flex items-center justify-center">
-                        <svg className="w-8 h-8 text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
-                        </svg>
-                      </div>
-                    </div>
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      fill
+                      className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
                   </div>
 
                   {/* Content */}

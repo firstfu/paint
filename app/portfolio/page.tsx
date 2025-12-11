@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { COMPANY, SERVICES, PORTFOLIO_ITEMS } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -75,10 +76,14 @@ export default function PortfolioPage() {
                     <div className="absolute inset-0 flex">
                       {/* Before */}
                       <div className="w-1/2 relative overflow-hidden">
-                        <div className="absolute inset-0 bg-[var(--color-secondary)] flex items-center justify-center">
-                          <span className="text-[var(--color-text-muted)]">施工前</span>
-                        </div>
-                        <div className="absolute bottom-4 left-4 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">
+                        <Image
+                          src={item.beforeImage}
+                          alt={`${item.title} - 施工前`}
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 768px) 50vw, 25vw"
+                        />
+                        <div className="absolute bottom-4 left-4 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded z-10">
                           BEFORE
                         </div>
                       </div>
@@ -86,10 +91,14 @@ export default function PortfolioPage() {
                       <div className="w-px bg-white/50 z-10" />
                       {/* After */}
                       <div className="w-1/2 relative overflow-hidden">
-                        <div className="absolute inset-0 bg-[var(--color-accent)]/20 flex items-center justify-center">
-                          <span className="text-[var(--color-primary)]">施工後</span>
-                        </div>
-                        <div className="absolute bottom-4 right-4 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">
+                        <Image
+                          src={item.afterImage}
+                          alt={`${item.title} - 施工後`}
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 768px) 50vw, 25vw"
+                        />
+                        <div className="absolute bottom-4 right-4 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded z-10">
                           AFTER
                         </div>
                       </div>

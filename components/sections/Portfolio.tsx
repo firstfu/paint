@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { PORTFOLIO_ITEMS, SERVICES } from "@/lib/constants";
 
 export default function Portfolio() {
@@ -114,19 +115,27 @@ function PortfolioCard({
       >
         {/* Before Image (Background) */}
         <div className="absolute inset-0 bg-[var(--color-secondary)]">
-          <div className="w-full h-full flex items-center justify-center text-[var(--color-text-muted)]">
-            <span className="text-sm">施工前</span>
-          </div>
+          <Image
+            src={item.beforeImage}
+            alt={`${item.title} - 施工前`}
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
         </div>
 
         {/* After Image (Overlay with clip) */}
         <div
-          className="absolute inset-0 bg-[var(--color-accent)]/20"
+          className="absolute inset-0"
           style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
         >
-          <div className="w-full h-full flex items-center justify-center text-[var(--color-primary)]">
-            <span className="text-sm">施工後</span>
-          </div>
+          <Image
+            src={item.afterImage}
+            alt={`${item.title} - 施工後`}
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
         </div>
 
         {/* Slider Handle */}

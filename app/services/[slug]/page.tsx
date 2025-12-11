@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { COMPANY, SERVICES, PORTFOLIO_ITEMS, FAQS } from "@/lib/constants";
 
@@ -126,8 +127,14 @@ export default async function ServiceDetailPage({ params }: Props) {
                   <div className="grid sm:grid-cols-2 gap-6">
                     {relatedPortfolio.map((item) => (
                       <div key={item.id} className="card p-4">
-                        <div className="aspect-video bg-[var(--color-secondary)] rounded-lg mb-4 flex items-center justify-center">
-                          <span className="text-[var(--color-text-muted)] text-sm">案例圖片</span>
+                        <div className="aspect-video bg-[var(--color-secondary)] rounded-lg mb-4 overflow-hidden relative">
+                          <Image
+                            src={item.afterImage}
+                            alt={item.title}
+                            fill
+                            className="object-cover"
+                            sizes="(max-width: 640px) 100vw, 50vw"
+                          />
                         </div>
                         <h3 className="font-semibold text-[var(--color-primary)] mb-1">
                           {item.title}
