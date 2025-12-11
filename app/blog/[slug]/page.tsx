@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { COMPANY, BLOG_POSTS, SERVICES } from "@/lib/constants";
+import { BLOG_CONTENTS, BlogSection } from "@/lib/blog-content";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -38,9 +39,16 @@ export default async function BlogPostPage({ params }: Props) {
   const relatedPosts = BLOG_POSTS.filter((p) => p.category === post.category && p.slug !== slug).slice(0, 3);
   const relatedService = SERVICES.find((s) => s.title.includes(post.category.replace("工程", "")));
 
-  // Generate dummy content based on the post
-  const generateContent = () => {
-    const sections = [
+  // 取得文章內容：優先使用 BLOG_CONTENTS 中的真實內容
+  const getContent = (): BlogSection[] => {
+    // 嘗試從 BLOG_CONTENTS 取得真實內容
+    const realContent = BLOG_CONTENTS[slug];
+    if (realContent) {
+      return realContent;
+    }
+
+    // 備用：如果沒有真實內容，使用通用模板
+    return [
       {
         title: "前言",
         content: `${post.excerpt} 在本文中，我們將深入探討這個主題，分享我們多年累積的專業知識和經驗。`,
@@ -59,24 +67,13 @@ export default async function BlogPostPage({ params }: Props) {
 4. **做好預算**：將房屋維護列入年度預算，避免臨時需要大筆支出`,
       },
       {
-        title: "常見問題解答",
-        content: `很多客戶會問我們：「什麼時候需要做${post.category}？」答案取決於多個因素，包括房屋的年齡、材質、地理位置等。一般來說，如果您發現以下情況，就應該考慮聯繫專業人員：
-
-- 屋頂或牆面出現明顯變色或髒污
-- 有漏水或滲水的跡象
-- 油漆開始剝落或起泡
-- 防水層出現老化或裂縫`,
-      },
-      {
         title: "結語",
         content: `希望這篇文章對您有所幫助。如果您有任何關於${post.category}的問題，歡迎隨時聯繫${COMPANY.name}，我們提供免費的到府評估服務。`,
       },
     ];
-
-    return sections;
   };
 
-  const content = generateContent();
+  const content = getContent();
 
   return (
     <>
