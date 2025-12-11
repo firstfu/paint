@@ -115,7 +115,7 @@ function PortfolioCard({
         {/* Before Image (Background) */}
         <div className="absolute inset-0 bg-[var(--color-secondary)]">
           <div className="w-full h-full flex items-center justify-center text-[var(--color-text-muted)]">
-            <span className="text-sm">Before 圖片</span>
+            <span className="text-sm">施工前</span>
           </div>
         </div>
 
@@ -125,7 +125,7 @@ function PortfolioCard({
           style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
         >
           <div className="w-full h-full flex items-center justify-center text-[var(--color-primary)]">
-            <span className="text-sm">After 圖片</span>
+            <span className="text-sm">施工後</span>
           </div>
         </div>
 
@@ -143,10 +143,10 @@ function PortfolioCard({
 
         {/* Labels */}
         <div className="absolute bottom-4 left-4 px-3 py-1 bg-black/50 text-white text-xs font-medium rounded-full backdrop-blur-sm">
-          Before
+          施工前
         </div>
         <div className="absolute bottom-4 right-4 px-3 py-1 bg-[var(--color-accent)] text-[var(--color-primary)] text-xs font-medium rounded-full">
-          After
+          施工後
         </div>
       </div>
 

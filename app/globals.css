@@ -514,7 +514,7 @@ textarea.input {
   }
 }
 
-/* ===== Before/After 滑動比較 ===== */
+/* ===== 施工前後滑動比較 ===== */
 .compare-slider {
   position: relative;
   overflow: hidden;

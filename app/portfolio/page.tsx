@@ -4,7 +4,7 @@ import { COMPANY, SERVICES, PORTFOLIO_ITEMS } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `案例展示 - ${COMPANY.region}屋頂清洗、油漆工程實績`,
-  description: `查看${COMPANY.name}的施工案例，包含屋頂清洗、油漆、防水工程的 Before/After 對比照片。`,
+  description: `查看${COMPANY.name}的施工案例，包含屋頂清洗、油漆、防水工程的施工前後對比照片。`,
 };
 
 export default function PortfolioPage() {
@@ -19,7 +19,7 @@ export default function PortfolioPage() {
               我們的施工實績
             </h1>
             <p className="text-lg text-[var(--color-text-light)]">
-              每一個案例都是我們用心服務的見證，查看 Before/After 對比照片，
+              每一個案例都是我們用心服務的見證，查看施工前後對比照片，
               感受專業施工的差異
             </p>
           </div>
