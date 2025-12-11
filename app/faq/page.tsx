@@ -166,20 +166,6 @@ export default function FAQPage() {
                       <p className="font-semibold text-[var(--color-primary)]">{COMPANY.mobile}</p>
                     </div>
                   </a>
-                  {/* Email 已移除
-                  <a
-                    href={`mailto:${COMPANY.email}`}
-                    className="flex items-center gap-3 p-3 rounded-xl bg-[var(--color-secondary)] hover:bg-[var(--color-accent)] transition-colors"
-                  >
-                    <svg className="w-5 h-5 text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                    <div>
-                      <p className="text-xs text-[var(--color-text-muted)]">Email</p>
-                      <p className="font-semibold text-[var(--color-primary)] text-sm">{COMPANY.email}</p>
-                    </div>
-                  </a>
-                  */}
                 </div>
                 <Link href="/contact" className="btn btn-primary w-full justify-center">
                   線上詢問

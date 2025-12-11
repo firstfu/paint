@@ -27,17 +27,6 @@ export default function Header() {
             專業服務 {COMPANY.region} 地區 | 免費估價
           </p>
           <div className="flex items-center gap-4 sm:gap-6 ml-auto">
-            {/* Email 已移除
-            <a
-              href={`mailto:${COMPANY.email}`}
-              className="flex items-center gap-1.5 hover:text-[var(--color-accent)] transition-colors"
-            >
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-              </svg>
-              <span className="hidden md:inline">{COMPANY.email}</span>
-            </a>
-            */}
             <a
               href={`tel:${COMPANY.phone.replace(/-/g, "")}`}
               className="flex items-center gap-1.5 hover:text-[var(--color-accent)] transition-colors"

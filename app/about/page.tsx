@@ -8,8 +8,6 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
-  // const yearsExperience = new Date().getFullYear() - COMPANY.yearEstablished;
-
   return (
     <>
       {/* Hero Section */}
@@ -140,41 +138,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
-      {/* Team Section - 團隊區塊已移除
-      <section className="py-20 bg-white">
-        <div className="container">
-          <div className="text-center mb-12">
-            <span className="section-label justify-center">Our Team</span>
-            <h2 className="section-title">專業團隊</h2>
-            <p className="section-description">
-              經驗豐富的專業師傅，是我們最大的資產
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {TEAM_MEMBERS.map((member) => (
-              <div key={member.id} className="card p-6 text-center group">
-                <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-[var(--color-secondary)] flex items-center justify-center relative overflow-hidden">
-                  <span className="text-4xl font-bold text-[var(--color-primary)]">
-                    {member.name[0]}
-                  </span>
-                </div>
-                <h3 className="text-xl font-bold text-[var(--color-primary)] mb-1">
-                  {member.name}
-                </h3>
-                <p className="text-[var(--color-accent-dark)] font-medium mb-3">
-                  {member.role}
-                </p>
-                <p className="text-[var(--color-text-light)] text-sm">
-                  {member.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      */}
 
       {/* Service Areas */}
       <section className="py-20 bg-[var(--color-secondary)]">

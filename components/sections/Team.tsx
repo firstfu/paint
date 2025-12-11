@@ -34,11 +34,6 @@ export default function Team() {
                     </span>
                   </div>
                 </div>
-                {/* Experience Badge (已註解 - 新團隊不顯示年資)
-                <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 px-3 py-1 bg-[var(--color-primary)] text-white text-xs font-medium rounded-full">
-                  {member.experience} 經驗
-                </div>
-                */}
               </div>
 
               {/* Info */}

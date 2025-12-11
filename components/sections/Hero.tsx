@@ -68,21 +68,6 @@ export default function Hero() {
 
             {/* Trust Badges */}
             <div className="flex items-center gap-6 animate-fade-in-up delay-400">
-              {/* 客戶頭像已移除
-              <div className="flex -space-x-3">
-                {[1, 2, 3, 4].map((i) => (
-                  <div
-                    key={i}
-                    className="w-10 h-10 rounded-full bg-gradient-to-br from-[var(--color-accent)] to-[var(--color-accent-dark)] border-2 border-white flex items-center justify-center text-xs font-bold text-[var(--color-primary)]"
-                  >
-                    {String.fromCharCode(64 + i)}
-                  </div>
-                ))}
-                <div className="w-10 h-10 rounded-full bg-[var(--color-primary)] border-2 border-white flex items-center justify-center text-xs font-bold text-white">
-                  +99
-                </div>
-              </div>
-              */}
               <div>
                 <div className="flex items-center gap-1 mb-0.5">
                   {[1, 2, 3, 4, 5].map((i) => (
@@ -116,42 +101,6 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-
-            {/* Floating Stats Card - 完成專案數 (已註解)
-            <div className="absolute -bottom-6 -left-6 md:left-0 bg-white rounded-2xl shadow-xl p-5 animate-slide-in-left delay-400">
-              <div className="flex items-center gap-4">
-                <div className="w-14 h-14 rounded-xl bg-[var(--color-primary)] flex items-center justify-center">
-                  <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-                  </svg>
-                </div>
-                <div>
-                  <p className="text-sm text-[var(--color-text-muted)]">完成專案</p>
-                  <p className="text-2xl font-bold text-[var(--color-primary)]">
-                    {COMPANY.completedProjects}+
-                  </p>
-                </div>
-              </div>
-            </div>
-            */}
-
-            {/* Floating Badge Card - 服務年資 (已註解)
-            <div className="absolute top-8 -right-4 md:right-0 bg-white rounded-2xl shadow-xl p-4 animate-slide-in-right delay-500">
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-xl bg-[var(--color-accent)] flex items-center justify-center">
-                  <svg className="w-6 h-6 text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <div>
-                  <p className="text-xs text-[var(--color-text-muted)]">服務年資</p>
-                  <p className="text-lg font-bold text-[var(--color-primary)]">
-                    {new Date().getFullYear() - COMPANY.yearEstablished}+ 年
-                  </p>
-                </div>
-              </div>
-            </div>
-            */}
           </div>
         </div>
       </div>

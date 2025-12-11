@@ -10,15 +10,6 @@ export default function JsonLd() {
     description: COMPANY.description,
     url: "https://tuxinju.com.tw",
     telephone: COMPANY.phone,
-    // email: COMPANY.email,  // email 已移除
-    // 地址已移除
-    // address: {
-    //   "@type": "PostalAddress",
-    //   streetAddress: COMPANY.address,
-    //   addressLocality: "南投市",
-    //   addressRegion: "南投縣",
-    //   addressCountry: "TW",
-    // },
     geo: {
       "@type": "GeoCoordinates",
       latitude: "23.9157",

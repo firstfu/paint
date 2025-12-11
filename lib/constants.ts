@@ -4,16 +4,11 @@ export const COMPANY = {
   nameEn: 'TuXinJu',
   slogan: '讓您的房屋煥然一新',
   description: '南投縣專業屋頂清洗、油漆、防水服務團隊，品質保證。',
-  // phone: '049-123-4567',  // 室內電話已移除
-  phone: '0908-103-398',  // 主要聯絡電話
+  phone: '0908-103-398',
   mobile: '0908-103-398',
-  // email: 'service@tuxinju.com.tw',  // email 已移除
-  // address: '南投縣南投市中興路123號',  // 地址已移除
   hours: '週一至週六 8:00-17:00',
   region: '南投縣',
   subRegions: ['南投市', '草屯鎮', '埔里鎮', '竹山鎮', '集集鎮', '名間鄉', '鹿谷鄉', '中寮鄉', '魚池鄉', '國姓鄉', '水里鄉', '信義鄉', '仁愛鄉'],
-  // yearEstablished: 2004,
-  // completedProjects: 2500,
   satisfactionRate: 98,
 } as const;
 
@@ -122,7 +117,6 @@ export const TEAM_MEMBERS = [
     id: 1,
     name: '陳有堂',
     role: '創辦人 / 總監',
-    // experience: '25年',
     description: '對品質有著極高的堅持，帶領團隊追求卓越。',
     image: '/images/team/member-1.jpg',
   },
@@ -130,7 +124,6 @@ export const TEAM_MEMBERS = [
     id: 2,
     name: '李明輝',
     role: '工程主管',
-    // experience: '18年',
     description: '專精防水工程，解決各種疑難雜症。',
     image: '/images/team/member-2.jpg',
   },
@@ -138,7 +131,6 @@ export const TEAM_MEMBERS = [
     id: 3,
     name: '黃志偉',
     role: '資深師傅',
-    // experience: '15年',
     description: '細心負責，客戶好評不斷的口碑師傅。',
     image: '/images/team/member-3.jpg',
   },
@@ -164,12 +156,6 @@ export const FAQS = [
     answer: '我們使用低 VOC 環保漆料，味道輕微且散發快速。一般建議施工當天保持通風，通常不需要搬出。如果家中有嬰幼兒或過敏體質者，可以暫時避開 1-2 天。',
     category: 'interior-painting',
   },
-  // {
-  //   id: 4,
-  //   question: '防水工程保固多久？',
-  //   answer: '我們的防水工程提供 5 年保固。保固期間如有任何漏水問題，我們會免費到府檢修。',
-  //   category: 'waterproofing',
-  // },
   {
     id: 5,
     question: '如何預約服務？',
