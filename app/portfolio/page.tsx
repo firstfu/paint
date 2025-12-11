@@ -84,7 +84,7 @@ export default function PortfolioPage() {
                           sizes="(max-width: 768px) 50vw, 25vw"
                         />
                         <div className="absolute bottom-4 left-4 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded z-10">
-                          BEFORE
+                          施工前
                         </div>
                       </div>
                       {/* Divider */}
@@ -99,7 +99,7 @@ export default function PortfolioPage() {
                           sizes="(max-width: 768px) 50vw, 25vw"
                         />
                         <div className="absolute bottom-4 right-4 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded z-10">
-                          AFTER
+                          施工後
                         </div>
                       </div>
                     </div>

@@ -302,16 +302,6 @@ export const PORTFOLIO_ITEMS = [
     afterImage: '/images/portfolio/case-3-after.jpg',
     completedAt: '2024-11',
   },
-  {
-    id: 4,
-    title: '竹山鎮工廠鐵皮屋頂油漆',
-    description: '大面積鐵皮屋頂翻新，採用隔熱防鏽漆，有效降低廠房溫度。',
-    category: 'roof-painting',
-    location: '竹山鎮',
-    beforeImage: '/images/portfolio/case-4-before.jpg',
-    afterImage: '/images/portfolio/case-4-after.jpg',
-    completedAt: '2024-10',
-  },
 ] as const;
 
 // SEO 關鍵字
