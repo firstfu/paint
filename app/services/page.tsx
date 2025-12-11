@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { COMPANY, SERVICES } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -40,14 +41,13 @@ export default function ServicesPage() {
                 {/* Image */}
                 <div className={`${index % 2 === 1 ? "lg:order-2" : ""}`}>
                   <div className="aspect-[4/3] bg-[var(--color-secondary)] rounded-3xl overflow-hidden relative">
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-center">
-                        <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-[var(--color-accent)]/20 flex items-center justify-center">
-                          <ServiceIcon type={service.icon} className="w-12 h-12 text-[var(--color-primary)]" />
-                        </div>
-                        <p className="text-[var(--color-text-muted)]">{service.title}</p>
-                      </div>
-                    </div>
+                    <Image
+                      src={service.image}
+                      alt={service.title}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 1024px) 100vw, 50vw"
+                    />
                   </div>
                 </div>
 

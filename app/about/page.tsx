@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { COMPANY, TEAM_MEMBERS, SERVICES } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -31,17 +32,14 @@ export default function AboutPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Image */}
             <div className="relative">
-              <div className="aspect-square bg-[var(--color-secondary)] rounded-3xl overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-[var(--color-primary)]/10 flex items-center justify-center">
-                      <svg className="w-16 h-16 text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                      </svg>
-                    </div>
-                    <p className="text-xl font-medium text-[var(--color-text)]">專業團隊</p>
-                  </div>
-                </div>
+              <div className="aspect-square bg-[var(--color-secondary)] rounded-3xl overflow-hidden relative">
+                <Image
+                  src="/images/hero-image.png"
+                  alt="塗新居專業團隊"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
               </div>
               {/* Floating Card */}
               <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-xl p-6 max-w-xs">
