@@ -21,8 +21,7 @@ export default function AboutPage() {
               {COMPANY.region}在地<br />專業油漆防水團隊
             </h1>
             <p className="text-lg text-[var(--color-text-light)]">
-              {COMPANY.slogan}，從一個小工班到今天的專業團隊，
-              我們始終堅持品質第一、服務至上的理念
+              {COMPANY.slogan}，我們始終堅持品質第一、服務至上的理念
             </p>
           </div>
         </div>
@@ -70,7 +69,7 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-[var(--color-text-light)] leading-relaxed">
                 <p>
-                  創辦人陳建國師傅憑著一身好手藝，開始為南投鄉親服務。
+                  創辦人陳有堂師傅憑著一身好手藝，開始為南投鄉親服務。
                   從最初的街坊鄰居口耳相傳，到今天服務遍及整個南投縣，
                   {COMPANY.name}始終保持著創業時的初心。
                 </p>

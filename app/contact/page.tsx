@@ -55,27 +55,12 @@ export default function ContactPage() {
               {/* Contact Cards */}
               <div className="space-y-4 mb-8">
                 <a
-                  href={`tel:${COMPANY.phone.replace(/-/g, "")}`}
+                  href={`tel:${COMPANY.mobile.replace(/-/g, "")}`}
                   className="flex items-center gap-4 p-4 rounded-xl bg-[var(--color-secondary-light)] hover:bg-[var(--color-secondary)] transition-all group"
                 >
                   <div className="w-14 h-14 rounded-xl bg-[var(--color-primary)] flex items-center justify-center group-hover:scale-110 transition-transform">
                     <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="text-sm text-[var(--color-text-muted)]">電話</p>
-                    <p className="text-xl font-bold text-[var(--color-primary)]">{COMPANY.phone}</p>
-                  </div>
-                </a>
-
-                <a
-                  href={`tel:${COMPANY.mobile.replace(/-/g, "")}`}
-                  className="flex items-center gap-4 p-4 rounded-xl bg-[var(--color-secondary-light)] hover:bg-[var(--color-secondary)] transition-all group"
-                >
-                  <div className="w-14 h-14 rounded-xl bg-[var(--color-accent)] flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <svg className="w-7 h-7 text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
                     </svg>
                   </div>
                   <div>

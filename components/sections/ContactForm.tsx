@@ -49,8 +49,8 @@ export default function ContactForm() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-sm text-[var(--color-text-muted)]">電話</p>
-                  <p className="font-semibold text-[var(--color-primary)]">{COMPANY.phone}</p>
+                  <p className="text-sm text-[var(--color-text-muted)]">手機</p>
+                  <p className="font-semibold text-[var(--color-primary)]">{COMPANY.mobile}</p>
                 </div>
               </a>
 

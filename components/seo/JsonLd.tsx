@@ -28,14 +28,11 @@ export default function JsonLd() {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
       opens: "08:00",
-      closes: "18:00",
+      closes: "17:00",
     },
     priceRange: "$$",
     image: "https://tuxinju.com.tw/images/og-image.jpg",
-    sameAs: [
-      "https://www.facebook.com/tuxinju",
-      "https://www.instagram.com/tuxinju",
-    ],
+    sameAs: [],
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "4.9",
