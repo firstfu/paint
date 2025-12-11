@@ -1,0 +1,37 @@
+{
+  "images": [
+    {
+      "name": "app_icon",
+      "prompt": "Modern mobile app icon for a fitness tracking app. Minimalist flat design with a running figure silhouette. Vibrant orange gradient background. Rounded corners suitable for iOS/Android. Professional and memorable.",
+      "aspect_ratio": "1:1"
+    },
+    {
+      "name": "hero_banner",
+      "prompt": "Website hero banner for a fitness app landing page. Dynamic abstract shapes suggesting movement and energy. Orange to red gradient colors. Clean composition with space for text. Modern, motivating atmosphere.",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "name": "feature_workout",
+      "prompt": "Feature illustration showing workout tracking concept. Flat vector style with orange and gray colors. Shows stylized person with data visualization elements around them. Clean, modern app aesthetic.",
+      "aspect_ratio": "4:3"
+    },
+    {
+      "name": "feature_progress",
+      "prompt": "Feature illustration showing progress tracking concept. Flat vector style with orange and gray colors. Shows upward trending graph with achievement badges. Clean, motivating design.",
+      "aspect_ratio": "4:3"
+    },
+    {
+      "name": "empty_state",
+      "prompt": "Friendly empty state illustration for no workouts recorded. Soft, encouraging style with orange accents. Shows a relaxed character ready to start exercising. Non-judgmental, motivating mood.",
+      "aspect_ratio": "1:1"
+    },
+    {
+      "name": "social_share",
+      "prompt": "Social media share card template for workout achievements. Bold design with orange gradient. Space for achievement text and stats. Shareable, celebratory mood. Instagram-ready square format.",
+      "aspect_ratio": "1:1"
+    }
+  ],
+  "defaults": {
+    "image_size": "2K"
+  }
+}

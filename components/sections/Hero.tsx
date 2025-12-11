@@ -87,18 +87,15 @@ export default function Hero() {
           <div className="relative lg:pl-8">
             {/* Main Image */}
             <div className="relative rounded-3xl overflow-hidden shadow-2xl animate-scale-in">
-              <div className="aspect-[4/5] bg-gradient-to-br from-[var(--color-secondary)] to-[var(--color-secondary-dark)] relative">
-                {/* Placeholder for hero image */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-[var(--color-accent)]/20 flex items-center justify-center">
-                      <svg className="w-16 h-16 text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                      </svg>
-                    </div>
-                    <p className="text-[var(--color-text-muted)] text-sm">專業施工團隊</p>
-                  </div>
-                </div>
+              <div className="aspect-[4/5] relative">
+                <Image
+                  src="/images/hero-image.png"
+                  alt="專業施工團隊 - 塗新居油漆師傅"
+                  fill
+                  className="object-cover"
+                  priority
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
               </div>
             </div>
           </div>
