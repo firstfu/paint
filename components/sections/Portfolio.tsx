@@ -113,25 +113,25 @@ function PortfolioCard({
         onMouseMove={handleMouseMove}
         onTouchMove={handleTouchMove}
       >
-        {/* Before Image (Background) */}
+        {/* After Image (Background - 右側) */}
         <div className="absolute inset-0 bg-[var(--color-secondary)]">
           <Image
-            src={item.beforeImage}
-            alt={`${item.title} - 施工前`}
+            src={item.afterImage}
+            alt={`${item.title} - 施工後`}
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 50vw"
           />
         </div>
 
-        {/* After Image (Overlay with clip) */}
+        {/* Before Image (Overlay with clip - 左側) */}
         <div
           className="absolute inset-0"
           style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
         >
           <Image
-            src={item.afterImage}
-            alt={`${item.title} - 施工後`}
+            src={item.beforeImage}
+            alt={`${item.title} - 施工前`}
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 50vw"
